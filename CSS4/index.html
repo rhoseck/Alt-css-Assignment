@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+      <!-- Logo discription Section-->
+      <div class="logo-desc-section">
+        <a href="../index.html">
+          <img src="./img/Logo.png" alt="Logo" class="logo">
+        </a>
+        <h2>For Individuals</h2>
+        <p>
+          Start benefiting from the wellness experience. For companies looking
+          on increasing productivity, and improving organization wellness.
+        </p>
+      </div>
+
+      <div class="form-container">
+        <!-- Form Content-->
+        <form action="../index.html">
+          <!-- Signup form, Grouped for easy styling-->
+          <div class="form-group">
+            <div class="input-box">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" placeholder="Ethan" required="">
+            </div>
+            <div class="input-box">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" placeholder="O" required="">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-box">
+              <label for="gender">Gender</label>
+              <select id="gender" required="">
+                <option>Select here</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Helicopter</option>
+              </select>
+            </div>
+            <div class="input-box">
+              <label for="dob">Date of Birth</label>
+              <input type="date" id="dob" min="1900-12-31" required="">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-box">
+              <label for="weight">Weight (KG)</label>
+              <input type="text" id="weight" placeholder="Enter your weight" min="1" max="1000" maxlength="3" required="">
+            </div>
+            <div class="input-box">
+              <label for="height">Height (CM)</label>
+              <input type="text" id="height" placeholder="Enter your height" min="1" max="300" maxlength="3" required="">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-box">
+              <label for="activity">Activity Level</label>
+              <select id="activity" required="">
+                <option>--Select Activity Level--</option>
+                <option>Maximum</option>
+                <option>Average</option>
+                <option>Minimum</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-box full-width">
+              <label for="password">Password</label>
+              <input type="password" id="password" required="" minlength="3">
+            </div>
+          </div>
+
+          <button type="submit" class="submit-btn">Register</button>
+
+          <p class="terms">
+            By clicking Register, you agree to our
+            <a href="http://www.nowwheretogo.lol">Terms of Use</a> and our
+            <a href="http://www.nowheretogo.lol">Privacy Policy</a>.
+          </p>
+        </form>
+      </div>
+    </div>
+  
+
+
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", -apple-system, system-ui, "Segoe UI", Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+} /* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6faf9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+  }
+
+  /* Main Container */
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1000px;
+    gap: 50px;
+  } /* This a very important rule
+  that hold the code together */
+
+/* Logo/Desc Section */
+.logo-desc-section {
+    flex: 1;
+    padding: 40px;
+    margin-top: 100px;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  p {
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 200;
+    color: #666;
+  }
+
+/* Right Section - Form */
+.form-container {
+    flex: 1;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Form Layout */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Input Group (Two Columns) */
+.form-group {
+    display: flex;
+    gap: 15px;
+  }
+
+/* Input and Label Styling */
+.input-box {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+  
+input:hover,
+  select:hover {
+    border-color: #98ffec;
+}
+
+input:focus,
+select:focus {
+  outline-color: #17c1a3;
+}
+
+
+/* Full-Width Input */
+.full-width {
+  width: 100%;
+}
+
+/* Register Button */
+.submit-btn {
+    width: 100%;
+    background-color: #17c1a3;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  
+.submit-btn:hover {
+    background-color: #20dbbc;
+  }
+
+  /* Terms & Conditions */
+.terms {
+    font-size: 12px;
+    text-align: center;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  .terms a {
+    color: #17c1a3;
+    text-decoration: none;
+  }
+
+/* Extra Stuffs, for media queries */
+/* For responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+ }
+
+.logo-desc-section {
+    text-align: left;
+    padding: 20px;
+    width: 90%;
+  }
+
+  .form-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .form-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .input-box {
+    width: 100%;
+  }
+  .register-btn {
+    font-size: 14px;
+    padding: 12px;
+    width: 100%;
+  }
