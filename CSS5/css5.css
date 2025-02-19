@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: rgba(0, 0, 0, 0.1);
+}
+
+main {
+  margin: 85px;
+}
+
+body {
+  background-color: #f5f7fa;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+
+.logo {
+  font-weight: bold;
+}
+
+nav a, nav button {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+nav button {
+  background-color: transparent;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.checkout-container {
+  display: flex;
+  max-width: 900px;
+  max-width: 100vh;
+  max-height: 100vh;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} /* This a very important rule
+that hold the code together, it seperates
+the column. */
+
+.checkout-form,
+.pricing-info {
+  padding: 50px;
+}
+
+.checkout-form {
+  flex: 2;
+  border-right: 1px solid #e1e1e1;
+}
+
+.checkout-form p {
+  font-weight: 600;
+}
+
+.checkout-form p span {
+  font-weight: normal !important;
+}
+
+h2 {
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 50px;
+}
+
+.divider {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #cacacaa9;
+}
+
+.pricing-info {
+  flex: 1;
+  background-color: #0073e6;
+  color: #fff;
+  border-radius: 0 8px 8px 0;
+}
+/* The  changing point, where the columns are 
+well divided and defined in between
+It makes it look the way it is the way it is */
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.numbering-img {
+  position: relative;
+  top: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px #00000000 solid;
+  outline: 0;
+  background-color: #8d8d8d48;
+  border-radius: 4px;
+} /* This code made the input box to be below the label */
+
+input:hover {
+  border: 1px rgb(0, 217, 255) solid;
+}
+
+input:focus {
+  border: 2px rgb(0, 102, 255) solid;
+}
+
+input.show-nrow {
+  flex: 1;
+}
+
+.buy-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.buy-button:hover {
+  background-color: #03bd2e;
+}
+
+.help-text img {
+  position: relative;
+  top: 4px;
+}
+
+.help-text {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.stripe-img {
+  position: relative;
+  top: 20px;
+  left: 40%;
+}
+
+.pricing-info h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.dollar {
+  font-size: 22px !important;
+  font-weight: normal !important;
+  position: relative;
+  top: -20px;
+  right: 5px;
+}
+
+.price {
+  font-size: 60px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+p span {
+  font-weight: 800 !important;
+}
+
+.price span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.autorenew {
+  font-size: 17px;
+  font-style: italic;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  padding-top: 30px;
+}
+
+ul li {
+  margin-bottom: 20px;
+}
+
+ul li img {
+  position: relative;
+  top: 3px;
+  padding-right: 10px;
+}
+
+.agency {
+  font-size: 14px;
+  margin-top: 30px;
+  line-height: 2;
+}
+
+.agency a{
+  color: #fff;
+}
+
+.divider.two {
+  margin: 20px 0;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+cite {
+  position: relative;
+  left: 10px;
+}
+
+cite img {
+  position: relative;
+  top: 12px;
+  right: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-top: 1px solid #e1e1e1;
+}
+
+
+footer a {
+  color: #1e8eff;
+  text-decoration: none;
+}
+
+.name-fields {
+  display: flex;
+  gap: 30px; /* Adjusting the gap between fields */
+}
+
+.name-field {
+  flex: 1; /* Ensuring both input fields take up equal space */
+}
+
+.name-field label {
+  display: block; /* Making sure the label takes the full width of its container */
+  margin-bottom: 5px;
+}
+
+.name-field input {
+  width: 100%; /* Making sure the input takes the full width of its container */
+}
+
+
+@media screen and (max-width: 696px) {
+  body {
+    padding: 10px;
+  }
+
+  .checkout-container {
+    flex-direction: column;
+    margin: 20px auto;
+  }
+
+  .checkout-form,
+  .pricing-info {
+    padding: 20px;
+  }
+
+  .name-fields {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a,
+  nav button {
+    display: none;
+  }
+
+  .buy-button {
+    font-size: 14px;
+  }
+
+  .price {
+    font-size: 40px;
+  }
+
+  .autorenew,
+  .agency {
+    font-size: 14px;
+  }
+
+  .stripe-img {
+    left: 0;
+    margin: 10px auto;
+    display: block;
+  }
+}
