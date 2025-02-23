@@ -1,0 +1,1032 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+/* General Settings */
+html {
+  width: 100%;
+}
+
+body {
+  background-image: linear-gradient(160deg, rgba(214, 5, 5, .095) 0%, rgba(234, 200, 31, .0975) 35%, rgba(0, 0, 0, 0) 75%) !important;;
+  background: #fdfcfb;
+  text-align: center;
+  height: 100%;
+  min-width: 1200px;
+}
+
+button:focus {
+  border: 3px #87afff solid;
+  outline: none;
+}
+
+/* Navbar */
+.navbar {
+  background-image: linear-gradient(160deg, rgba(214, 5, 5, .095) 0%, rgba(234, 200, 31, .0975) 35%, rgba(0, 0, 0, 0) 75%) !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+  background: white;
+}
+
+.logo {
+  pointer-events: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #000;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.nav-links li a#urlscolor {
+  color: #276fff;
+}
+
+.nav-links li a:hover {
+  color: #276fff;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 30px;
+}
+
+.login {
+  text-decoration: none;
+  color: #004eeb;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 20px;
+  border: 3px #00000000 solid;
+  border-radius: 30px;
+}
+
+.login:hover {
+  background-color: #c4c4c4a8;
+}
+
+.forFree {
+  font-size: 12px;
+  font-weight: bold;
+  border: solid transparent;
+  padding: 10px 16px;
+  border-radius: 20px;
+  background-color: #0056ff;
+  color: #fff;
+  cursor: pointer;
+  border: 3px #00000000 solid;
+}
+
+/* First Page */
+
+.div-firstPage {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.first-page {
+  padding: 0 116px;
+  text-align: center;
+}
+
+.first-page h1 {
+  font-size: 50px;
+  line-height: 2;
+  font-weight: bold;
+  color: #000;
+}
+
+.first-page .secondaryText{
+  text-align: center;
+  font-size: 20px;
+}
+
+.highlight {
+  margin-top: 5px;
+}
+
+.blue-text {
+  color: #0056ff;
+  position: relative;
+}
+
+.blue-text::after {
+  content: url(./img/Vector\ 3\ underline.png);
+  position: absolute;
+  right: 100px;
+  top: 5px;
+  
+}
+
+.first-page p {
+  color: #000000;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.signup {
+  background: #0056ff;
+  color: white;
+  border-color: #ffffff00;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 3px #00000000 solid;
+}
+
+.signup:hover {
+  background-color: #276fff;
+}
+
+.learn-more {
+  color: #0056ff;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 3px #00000000 solid;
+}
+
+.learn-more:hover {
+  background-color: #b7b6ff3a;
+}
+
+/* Illustration */
+.illustration-container {
+  position: relative;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.shadowCone {
+  pointer-events: none;
+  width: 280px;
+  margin-right: 20px;
+  align-self: self-start;
+  position: relative;
+  left: -200px;
+  top: 20px;
+}
+
+.illustration {
+  width: 450px;
+  margin-top: 40px;
+  padding: 38px;
+  background: #fff;
+  border: 1px #0056ff solid;
+  border-radius: 10px;
+  text-align: center;
+  position: absolute;
+}
+
+.illustration .images {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none; /* Make imgs unclickable */
+}
+
+.illustration .arrowImg {
+  height: 10px;
+  align-self: center;
+}
+
+.illustration p {
+  font-size: 18px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.spacerImg {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: -5px;
+  pointer-events: none;
+}
+
+.spacerImg img {
+  width: 100%;
+}
+
+/* Mid Section */
+.midSection {
+  background-color: #F8F7F7;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 160px;
+  padding: 20 110px;
+}
+
+.midSection .oneStop {
+  text-align: left;
+  font-size: 40px !important;
+  margin-right: 100px;
+}
+
+.midSection h2 {
+  font-size: 30px;
+}
+
+span {
+  color: #0056ff;
+}
+
+.midSection .statistics {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  width: 800px;
+}
+
+.midSection .statistics p {
+  font-size: 16px;
+}
+
+.midSection .statistics .reduceWidth {
+  width: 170px;
+}
+
+/* Second Page */
+
+.div-secondPage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 30px 110px;
+  padding-bottom: 200px;
+  background-color: #fff;
+}
+
+.div-secondPage .main-firstBox {
+  text-align: left;
+  width: 300px;
+  line-height: 30px;
+  position: relative;
+  margin-right: 100px;
+}
+
+.div-secondPage .main-firstBox h3 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  line-height: 40px;
+}
+
+.div-secondPage .main-firstBox .divider /* First Divider */{
+  width: 5px;
+  height: 40px;
+  background: linear-gradient(#000, #fff);
+  position: absolute;
+  left: -10px;
+  top: 0;
+}
+
+.div-secondPage .main-firstBox span {
+  color: #0055ff;
+}
+
+.gridDisplay {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 coloums */
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  text-align: left;
+  width: 500px;
+}
+
+.gridDisplay img {
+  pointer-events: none;
+  padding-bottom: 10px;
+}
+
+.gridDisplay h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.gridDisplay .SfirstBox {
+  word-spacing: 2px;
+}
+
+/* Third page */
+
+.third-page {
+  position: relative;
+  background-color: #fff;
+  padding-bottom: 50px;
+  margin: 0 10px;
+}
+.div-thirdPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  text-align: center; /* Center text inside the div */
+  padding: 50px; /* Adjust padding as needed */
+}
+.third-page h4 {
+  text-align: left;
+}
+
+.third-page .text {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  justify-self: center;
+}
+
+.third-page .text .divider {
+  background-image: linear-gradient(#000, #fff);
+  height: 40px;
+  width: 5px;
+  position: relative;
+  left: -15px;
+  top: 42px;
+}
+
+.third-page .text h4 {
+  font-size: 35px;
+}
+
+/* Service Price */
+
+.mainpriceBox {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  position: relative;
+}
+
+.mainpriceBox .priceBox1{
+  color: #1E3448;
+  background-color: #fff;
+  height: 455px;
+  width: 379px;
+  border: 2px #0055ff solid;
+  border-radius: 12px;
+  justify-self: right;
+  align-self: center;
+  align-content: center;
+  text-align: left;
+  padding-left: 50px;
+  z-index: 0;
+  position: relative;
+  right: -10px;
+  overflow: hidden;
+}
+
+/* Price Indicators */
+/* Price Box 1 */
+.priceBox1 p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.priceBox1 h4 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.priceBox1 .priceDesc {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.priceBox1 ol li {
+  list-style: none;
+  padding-top: 25px;
+}
+
+.priceBox1 ol li::before {
+  content: url(./img/blue\ check\ circle.svg);
+  position: relative;
+  left: -5px;
+  top: 1px;
+}
+
+/* Price Box 2 */
+.mainpriceBox .priceBox2{
+  color: #fff;
+  background-color: #1E3448;
+  height: 600px;
+  width: 410px;
+  padding-left: 50px;
+  border-radius: 12px;
+  justify-self: center;
+  align-content: center;
+  text-align: left;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.priceBox2 p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.priceBox2 h4 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.priceBox2 .priceDesc {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.priceBox2 ol li {
+  list-style: none;
+  padding-top: 25px;
+}
+
+.priceBox2 ol li::before {
+  content: url(./img/white\ check\ circle.svg);
+  position: relative;
+  left: -5px;
+  top: 1px;
+}
+
+/* Price Box 3 */
+.mainpriceBox .priceBox3{
+  color: #1E3448;
+  background-color: #fff;
+  height: 455px;
+  width: 379px;
+  padding-left: 50px;
+  border: 2px #0055ff solid;
+  border-radius: 12px;
+  text-align: left;
+  justify-self: left;
+  align-self: center;
+  align-content: center;
+  z-index: 0;
+  position: relative;
+  left: -10px;
+  overflow: hidden;
+}
+
+.priceBox3 p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.priceBox3 h4 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.priceBox3 .priceDesc {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.priceBox3 ol li {
+  list-style: none;
+  padding-top: 25px;
+}
+
+.priceBox3 ol li::before {
+  content: url(./img/blue\ check\ circle.svg);
+  position: relative;
+  left: -5px;
+  top: 1px;
+}
+
+.priceButton {
+  padding-left: 10px;
+}
+
+.priceButton .button1 {
+  color: #0055ff;
+  background-color: #00000000;
+  padding: 10px 15px;
+  border: 1px #0056ff solid;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.button1:hover {
+  background-color: #c2c1ff27;
+}
+
+.button1:focus {
+  border: 3px #87afff solid;
+}
+
+.priceButton .button2 {
+  color: #fff;
+  background-color: #0056ff;
+  padding: 10px 15px;
+  border: 1px #00000000 solid;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.button2:hover {
+  background-color: #1f69ff;
+}
+
+.button2:focus {
+  border: 3px #87afff solid;
+}
+
+
+/* Form Page */
+.formPage .bgVector {
+  background-attachment: fixed;
+  background-image: url(./img/overlapping-waves-background-deep-sea-design-illustration-vector.jpg);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-color: #172736;
+  position: relative;
+  height: 523px;
+  z-index: 1; /* Ensure the background is behind the form */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  width: 500px;
+  height: 350px;
+  border-radius: 4px;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.form-container {
+  width: 500px;
+  height: 350px;
+  border-radius: 4px;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the form vertically and horizontally */
+}
+
+form {
+  width: 100%; /* Make the form take up the full width of its container */
+  max-width: 400px; /* Limit the form width for better readability */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Add spacing between form elements */
+}
+
+form input[type="text"],
+form select {
+  width: 100%; /* Make inputs and select take up the full width of the form */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+form select {
+  appearance: none; /* Remove default dropdown arrow */
+  background-color: white;
+}
+
+form p {
+  text-align: left;
+  font-size: 14px;
+  color: #276fff;
+}
+
+form .trimURL {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center the button horizontally */
+}
+
+form .trimURL button {
+  padding: 10px 20px;
+  background-color: #0056ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+}
+
+form .trimURL button::after {
+  content: url(./img/magic\ wand.png);
+  position: absolute;
+  pointer-events: none;
+}
+
+form .trimURL button:hover {
+  background-color: #1f69ff;
+}
+
+form .trimURL button:focus {
+  border: 2px #87afff solid;
+}
+
+#urlEntry {
+  color: #276fff;
+  border: 1px #276fff solid;
+}
+
+#urlEntry:focus {
+  outline: none;  
+  border: 3px solid #87afff;
+}
+
+#urlEntry::placeholder {
+  color: #276fff;
+}
+
+.domainAlias {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px; 
+  align-self: center;
+}
+
+.domainAlias select,
+.domainAlias #enterAlias {
+  border: 1px solid #0055ff;
+  width: 48%;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.domainAlias select {
+  color: #0055ff;
+  background-color: white;
+  width: 60% !important;
+  position: relative;
+  left: -10px;
+}
+
+.domainAlias select:focus {
+  outline: none;
+  border: 3px #87afff solid;
+}
+
+#enterAlias {
+  color: #0055ff;
+}
+
+#enterAlias:focus {
+  outline: none;
+  border: 3px #87afff solid;
+}
+
+#enterAlias::placeholder {
+  color: #0055ff;
+}
+
+.bgVector1, .bgVector2 {
+  position: absolute;
+  z-index: 0;
+  background-attachment: fixed;
+}
+
+.bgVector1 {
+  left: 0px;
+}
+
+.bgVector2 {
+  right: 0px;
+  top: 0px;
+}
+
+/* FAQ section */
+.FAQ {
+  position: relative;
+  padding: 30px 300px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Container containing Title and Content */
+.FAQdiv {
+  width: 792px;
+}
+
+h5 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+/* Div containing text and divider */
+.FAQtext {
+  justify-self: center;
+  width: 100px;
+  position: relative;
+}
+
+.FAQtext .divider {
+    width: 5px;
+    height: 40px;
+    background: linear-gradient(#000, #fff);
+    margin: 10px auto;
+    position: absolute;
+    top: -5px;
+}
+
+details {
+  color: #275077;
+  text-align: left;
+  border-bottom: 1px #ccc solid;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  user-select: none;
+}
+
+details > summary {
+  font-size: 15px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 10px;
+  position: relative; /* Needed for absolute positioning of pseudo-element */
+}
+
+details > summary:hover {
+  background-color: #1e34482c;
+  border-radius: 5px;
+}
+
+details > summary:focus {
+  outline-color: #0084ff;
+}
+
+details > summary::after {
+  content: url(./img/plus.svg);
+}
+
+details[open] summary {
+  color: #000;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+details[open] summary::after{
+  content: url(./img/minus.svg);
+}
+
+details > p {
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+details > p:focus {
+  font: s;
+}
+
+
+details .FAQsL {
+  position: relative;
+  padding: 30px 300px;
+  display: flex;
+  justify-content: center;
+  border-bottom: #00000000;
+}
+
+.Final {
+  width: 100%;
+  background-image: url(./img/overlpping-waves-background-deep-sea-design-illustration-vector.jpg);
+  background-color: #275077;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Final > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 299px;
+}
+
+.Final h6 {
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 10px;
+  z-index: 2;
+}
+
+.Final button {
+  border: 3px transparent solid;
+  border-radius: 20px;
+  background-color: #0055ff;
+  color: #fff;
+  height: 40px;
+  width: 150px;
+  cursor: pointer;
+  z-index: 2;
+  transition: 0.4s;
+  outline: none;
+}
+
+.Final button:hover {
+  background-color: #1f69ff;
+  width: 155px;
+  height: 45px;
+}
+
+.Final button:focus {
+  border-color: #87afff;
+}
+
+.Final button:active {
+  width: 130px;
+  height: 30px;
+}
+
+.finalImg1 {
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.finalImg2 {
+  position: absolute;
+  right: 0px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.mainFooterdiv {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+
+.mainFooterdiv ol li {
+  list-style: none;
+}
+
+.mainFooterdiv a {
+  text-decoration: none;
+  color: #1E3448;
+}
+
+.mainFooterdiv a:visited {
+  text-decoration: none;
+  color: #1E3448;
+}
+
+.mainFooterdiv .h7 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.mainFooterdiv > .scissorLinks > a > img {
+  width: 170px;
+}
+
+
+.scissorLinks {
+  width: 184px;
+  margin-right: 50px;
+}
+
+.scissorSocials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.infoSec1 {
+  height: 344px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 14px;
+  text-align: left;
+}
+
+.infoSec2 {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 14px;
+  text-align: left;
+}
+
+.infoSec3 {
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 14px;
+  text-align: left;
+}
+.infoSec4 {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.infoSec1 p,
+.infoSec2 p,
+.infoSec3 p,
+.infoSec4 p {
+  padding-bottom: 12px;
+} 
+
+.infoSec1 li,
+.infoSec2 li,
+.infoSec3 li,
+.infoSec4 li {
+    border-bottom: 1px;
+    padding-bottom: 5px; 
+}
+
+footer {
+  position: relative;
+  overflow: hidden;
+}
+
+.footerImg1 {
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.footerImg2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+  }
+  .nav-links {
+      flex-direction: column;
+      gap: 10px;
+  }
+  .first-page {
+      width: 90%;
+  }
+  .first-page h1 {
+      font-size: 1.5em;
+  }
+}
